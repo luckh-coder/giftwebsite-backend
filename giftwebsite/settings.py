@@ -8,7 +8,7 @@ from datetime import timedelta
 SECRET_KEY = 'django-insecure-hn&(7(_g3n#5y84^4c+j$5xtj5*&wbj11x+9t!-4_f%%uew2*@'
 DEBUG = True
 DATABASES_URL = "postgresql://postgres:OvZNkJZenOkAnwAJfspeeKTfWEECtWAY@crossover.proxy.rlwy.net:14624/railway"
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
