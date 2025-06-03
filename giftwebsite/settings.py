@@ -100,9 +100,17 @@ REST_FRAMEWORK = {
 #     }
 # }
 
-# DATABASES = {
-#     'default': dj_database_url.config(default=DATABASES_URL, conn_max_age=1800)
-# }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'bbEuDkmHNIXBaCrEFdThyeQpNMehnbAe',
+        'HOST': 'postgres.railway.internal',
+        'PORT': '5432',
+    }
+}
 
 AUTHENTICATION_BACKENDS = [
     'giftapp.backends.EmailBackend',
