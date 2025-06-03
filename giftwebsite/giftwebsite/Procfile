@@ -1,0 +1,2 @@
+web: gunicon giftwebsite.wsgi --log-file -
+web: python manage.py migrate && gunicorn giftwebsite.wsgi
