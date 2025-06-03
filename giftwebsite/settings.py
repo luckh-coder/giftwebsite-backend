@@ -1,7 +1,9 @@
 import os
 from pathlib import Path
-import dj_database_url
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 from datetime import timedelta
 SECRET_KEY = 'django-insecure-hn&(7(_g3n#5y84^4c+j$5xtj5*&wbj11x+9t!-4_f%%uew2*@'
 DEBUG = True
@@ -98,9 +100,9 @@ REST_FRAMEWORK = {
 #     }
 # }
 
-DATABASES = {
-    'default': dj_database_url.config(default=DATABASES_URL, conn_max_age=1800)
-}
+# DATABASES = {
+#     'default': dj_database_url.config(default=DATABASES_URL, conn_max_age=1800)
+# }
 
 AUTHENTICATION_BACKENDS = [
     'giftapp.backends.EmailBackend',
